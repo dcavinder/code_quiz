@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+        <div class="header">
+            <div>
+                <button class="button" id="score_check">View Highscores</button>
+            </div>
+            <div>
+                <p id="timer"> Timer: 0</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <section class="intro" id="intro">
+                <div id="opening_statement">
+                    <h1>
+                       Coding Quiz Challenge
+                    </h1>
+                    <p id="instruction">
+                        Answer the following code questions within the time limit. Incorrect answers will deduct ten seconds from your time and lower your overall score!
+                    </p>
+                    <button class="button" id="start_button">Start Quiz</button>
+                </div>
+            </section>
+            <section class="quiz_questions" id="quiz_questions">
+                <div>
+                    <div>
+                        <h2 id ="question_display">display question</h2>
+                        <ul>
+                            <li><button class ="options" id="option_1" value="a">Option1</button></li>
+                            <li><button class ="options" id="option_2" value="b">Option2</button></li>
+                            <li><button class ="options" id="option_3" value="c">Option3</button></li>
+                            <li><button class ="options" id="option_4" value="d">Option4</button></li>
+                        </ul>
+                    <div>
+                    <div id="answer_check">
+                        <p>Right or Wrong Answer</p>
+                </div>
+            </section>
+
+            <section class="submit_page" id="submit_page">
+                <div>
+                    <h2 id="end_quiz">All Done!</h2>
+                    <p id = "final_score">Your score is: </p>
+
+                    <p>Enter initials
+                        <input id="initials">
+                        <button class="button" id="submit_score">Submit</button>
+                    </p>
+
+                </div>
+            </section>
+
+            <section class="highscores" id ="highscores">
+                <div>
+                    <h2>High Scores</h2>
+                    <div class="user_score" id="user_score"><p>Your score</p></div><br><br>
+                    <div>
+                        <button class="button" id="go_back">Go back</button>
+                        <button class="button" id="clear_records">Clear Highscores</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Made by Danielle Cavinder</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

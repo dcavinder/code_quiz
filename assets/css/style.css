@@ -1,0 +1,103 @@
+* {
+    color: white;
+    text-shadow: 2px 2px 6px limegreen;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin:180px;
+}
+
+footer {
+    text-align: center;
+}
+
+.quiz_questions {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+
+li {
+    margin-bottom: 10px;
+    color: black;
+}
+.options {
+    color: black;
+    text-shadow: none;
+    background:darkslategrey;
+
+}
+
+/* stops from displaying until called */
+.quiz_questions, .submit_page, .highscores, #answer_check {
+    display:none;
+}
+
+.button{
+    color: black;
+    text-shadow: none;
+    border: green;
+    background:darkslategrey;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+.button:hover{
+    background-color:lime;
+    box-shadow: 2px 2px 4px white;
+}
+
+input {
+    color: black;
+}
+
+.user_score li {
+    color: white;
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        margin: 50px
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    body {
+      font-size: 125%;
+    }
+    main {
+        margin: 10px;
+    }
+}

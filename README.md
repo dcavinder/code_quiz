@@ -15,7 +15,7 @@ An introductory page is presented and the user can choose to start the quiz. Aft
 the application will validate the user and display a response. Incorrect answers incurr a 10 second penalty. At the end the users score is displayed and the user is prompted to enter their intials. The score is added to local storage and will be displayed on the ranked score board. 
 
 ## Deployed
-https://dcavinder.github.io/mod_4_challenge/
+(https://dcavinder.github.io/code_quiz/)
 
 ## License
 MIT License
